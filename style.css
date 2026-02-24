@@ -1,0 +1,237 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Profile Card  */
+.profile-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 20px 60px (0,0,0,0.3);
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* profile photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Name */
+.profile-name {
+    color: #333;
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+
+/* profile description */
+.profile-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+/* Social Bse Style Buttons */
+.btn {
+    width: 100%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn i {
+    margin-right :8px;
+}
+
+/* Button Colors */
+.btn-instagram {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.btn-github {
+    background-color: #333;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+}
+
+.btn-contact {
+    background:linear-gradient(135deg, #667eea, #764ba2);
+    margin-top: 20px;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-instagram:hover {
+    background: linear-gradient(135deg, #833ab4, #9d4edd, #ff006e);
+}
+
+.btn-github:hover {
+    background-color: #555;
+}
+
+.btn-linkedin:hover {
+    background-color: #0056b3;
+}
+
+.btn-contact:hover {
+    background:linear-gradient(135deg, #764ba2, #667eea);
+}
+
+/* Info Section */
+.info-section {
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-box h3 {
+    color:#667eea;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.info-box h3 i {
+    margin-right: 10px;
+}
+
+/* Hobby List */
+.hobby-list {
+    list-style: none;
+}
+
+.hobby-list li {
+    padding: 10px 15px;
+    background: #f8f9fa;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hobby-list li:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Skills-tag{
+    background: #667eea;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500px;
+    transition: all 0.3s ease;
+}
+
+.Skills-tag:hover{
+    background:linear-gradient(135deg, #667eea,#ff006e, #833ab4 );
+    transform: scale(1.1)
+}
+
+/* Responsive Design */
+@media(max-width:600px){
+    body{
+        padding: 20px;
+    }
+    .profile-card{
+        padding: 30px 20px;
+    }
+    .profile-name {
+        font-size: 24px;
+    }
+    .profile-photo{
+        width: 120px;
+        height: 120px
+    }
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .skills-container{
+        justify-content: center;
+    }
+}
+
