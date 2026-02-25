@@ -23,7 +23,26 @@
           <h1 class="profile-name">Nanda Dwi Satria</h1>
 
           <!-- Deskripsi -->
-           <p class="profile-description"> Aspiring Fullstack Developer | 30 Days Chalenge </p>
+           <p class="profile-description" id="profiledesc"> Aspiring Fullstack Developer | 30 Days Chalenge </p>
+
+           <!-- Fitur Baru input nama visitor  -->
+            <div class="visitor-input">
+              <h3>Intrduce Yourself</h3>
+              <input type="text" id="visitorname" placeholder="Type Your Name" class="input-field">
+              <button onclick="greetvisitor()" class="btn btn-greet">
+                <i class="fa fa-hand-o-right"></i> say hello
+              </button>
+              <p id="greetingmessage" class="greeting-message"></p>
+            </div>
+
+            <!-- Fitur Baru theme switcher -->
+             <div class="theme-buttons">
+              <h3>Change Theme</h3>
+              <button onclick="changetheme('purple')" class="btn btn-theme btn-purple">purple</button>
+              <button onclick="changetheme('blue')" class="btn btn-theme btn-blue">Blue</button>
+              <button onclick="changetheme('green')" class="btn btn-theme btn-green">Green</button>
+              <button onclick="changetheme('orange')" class="btn btn-theme btn-orange">Orange</button>
+             </div>
 
            <!-- Social Media Buttons -->
             <div class="social-buttons">
@@ -81,7 +100,16 @@
                 <button class="btn btn-contact"> 
                   <i class="fa fa-envelope"></i>Contact Me</button>
                </a>
+
+               <!-- Fitur Baru Visitor Counter -->
+                <div class="visitor-counter">
+                  <p>Page views : <span id="viewcount">0</span></p>
+                  <button onclick="incrementcounter()" class="btn btn-small">Add View</button>
+                </div>
             </div>
           </div>
+
+          <!-- Link Javascript -->
+           <script src="script.js"></script>
   </body>
 </html>
